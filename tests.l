@@ -1,8 +1,5 @@
 `(== 64 64)
 (load "functions.l")
-
-#{
-
 # inc, add
 (for A (list 8 12 24)
    (for N (range 0 255)
@@ -20,9 +17,7 @@
       (test
          (soda-sub-asm Lst Lst2)
          (soda-sub Lst Lst2) ) ) )
-}#
-
-(do 10240000000000
+(do 10240
    (let
       (L1 (randL 4)
          L2 (randL 4)
